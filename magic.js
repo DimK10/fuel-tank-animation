@@ -2,10 +2,6 @@ $(document).ready(function () {
   $('.tk').each(function () {
     var amount = $('.lq').attr('data-amount');
     var quantity = amount;
-    /* if	(amount < 50) {
-    amount = parseInt(amount) + 10
-  } */
-    /* $('.lq').css({height : amount  + '%'}); */
     $(this)
       .find('.lq')
       .animate({ height: parseInt(amount) + '%' }, 1000, function () {});
